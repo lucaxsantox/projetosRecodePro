@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color:red;
+   
+}
+.menu a {
+    font-family: Arial, Helvetica, sans-serif; color: white;
+}
+.menu {background-color: red;
+}
+
+.preço_normal {
+    font-size: medium;
+}
+
+.preço_promoção{
+    font-size: x-large; color: red;
+}
