@@ -2,20 +2,61 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 h4 {
+    
     color:red;
    
 }
-.menu a {
-    font-family: Arial, Helvetica, sans-serif; color: white;
+.menu a { 
+    border: red;
+    text-align: right;
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px; 
+    margin-left: 150px;
 }
-.menu {background-color: red;
+.menu {background-color: red; height: 60px; width: 100%;
 }
 
-.preço_normal {
-    font-size: medium;
+.preco_normal {
+    font-size: smaller; text-decoration: line-through;
 }
 
-.preço_promoção{
-    font-size: x-large; color: red;
+.preco_promocao{
+    font-size: large; color: red; font-weight: bolder; line-height: 1%;
+}
+
+#rodape {
+    text-align: center;
+}
+
+.categoria { display: inline-block; line-height: 25px; vertical-align: top; font-size:medium; 
+
+}
+
+
+.produtos { 
+    
+    
+    display: inline-block;
+    width: 1100px;
+    padding-left: 40px;
+}
+
+.box_produto {
+    
+
+     width: 250px;
+     margin-left: 15px;
+    
+}
+
+#nome_contato {
+    color: black;
+}
+
+#nome_mensagem {
+    color: black;
 }

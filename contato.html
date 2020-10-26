@@ -7,15 +7,15 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
-<body> <!-- Início do Menu-->
-    <table width="100%" class="menu">
-        <tr>
-            <td align="center" width="25%"><a href="index.html"><img width= "100px" src="./Imagens/logo.png" alt="Snack Table"></a></td>
-            <td align="center" width="25%"><a href="produtos.html">Produtos</a></td>
-            <td align="center" width="25%"><a href="loja.html">Nossas Lojas</a></td>
-            <td align="center" width="25%"><a href="contato.html">Contato</a></td>
-        </tr>
-    </table>
+<body>
+    <!-- Início do Menu-->
+    <nav class="menu">
+        <a href="index.html"><img width= "100px" src="./Imagens/logo.png" alt="Snack Table"></a>
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas Lojas</a>
+        <a href="contato.html">Contato</a>
+
+    </nav>
     <!-- Fim do menu--> 
 
     <h1>Contato</h1>
@@ -26,7 +26,7 @@
         <tr>
             <td width="30%" align="center">
                 <img src="./Imagens/logo_email.png" width="40px">
-                contato@snacktable.com
+               contato@snacktable.com
             </td>
 
             <td width="40%" align="center">
@@ -45,24 +45,23 @@
     <br> <br> <br> <br>
 
     <form>
-        <p>Nome: </p> 
-        <input type:"text" style="width: 400px;">
-        <p>Mensagem: </p>
-        <textarea style="width: 400px;"></textarea>
+        <h4 id="nome_contato">Nome: </h4>
+        <input type="text" style="width: 400px;" placeholder="Escreva aqui o seu nome">
+        <br><br><br>
+        <h4 id="nome_mensagem">Mensagem: </h4>
+        <textarea style="width: 400px; resize: none; height: 100px;" placeholder="Escreva aqui sua mensagem"></textarea>
 
-        <input type="submit" value="Enviar"
+        <input type="submit" value="Enviar">
 
     </form>
     <br> <br> <br> <br> 
         <br> <br> <br> <br> <br> 
         <br> <br> <br> <br> <br>
-    <center>
-        <span>
+        
+        <footer id="rodape">
             <h4>Formas de Pagamento</h4>
-            <img src="./Imagens/formas_de_pagamento.png" alt="Formas de pagamento">
-            
-        </span>
-    </center>
-    <center>&copy; Recode Pro</center>
+                <img src="./Imagens/formas_de_pagamento.png" alt="Formas de pagamento">
+            <p>&copy;Recode Pro</p>
+        </footer>
 </body>
 </html>

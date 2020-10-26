@@ -5,210 +5,196 @@
         <meta charset="UTF-8">
         <title>Produtos - Snack Table</title> 
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="./js/funcoes.js"></script>
 </head>
 
-<body> <!-- Início do Menu-->
-    <table width="100%" class="menu">
-        <tr>
-            <td align="center" width="25%"><a href="index.html"><img width= "100px" src="./Imagens/logo.png" alt="Snack Table"></a></td>
-            <td align="center" width="25%"><a href="produtos.html">Produtos</a></td>
-            <td align="center" width="25%"><a href="loja.html">Nossas Lojas</a></td>
-            <td align="center" width="25%"><a href="contato.html">Contato</a></td>
-        </tr>
-    </table>
-    <!-- Fim do menu--> 
+<body> 
+        <!-- Início do Menu-->
+    <nav class="menu">
+        <a href="index.html"><img width= "100px" src="./Imagens/logo.png" alt="Snack Table"></a>
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas Lojas</a>
+        <a href="contato.html">Contato</a>
+        <!-- Fim do menu--> 
+    </nav>
 
-    <h1>Produtos</h1>
+    <header>
+        <h1>Produtos</h1>
+    </header>
+    
     
     <hr>
-
-    <table border=0 width="100%" cellpadding="20">
-        <tr>
-            <td rowspan="5" width="20%" valign="top">
+    <!-- Produtos -->
+        <section class="categoria">
                 <h1>Categorias</h1>
                 <ul>
-                    <li>Salgadinhos(4)</li>
-                    <li>Torradas(3)</li>
-                    <li>Biscoitos(2)</li>
-                    <li>Chocolates(4)</li>
-                    <li>Geléias & Pastas(3)</li>
+                    <li onclick="exibir_todos()">Todos(16)</li>
+                    <li onclick="exibir_categoria('Salgadinhos')">Salgadinhos(4)</li>
+                    <li onclick="exibir_categoria('Torradas')">Torradas(3)</li>
+                    <li onclick="exibir_categoria('Biscoitos')">Biscoitos(2)</li>
+                    <li onclick="exibir_categoria('Chocolates')">Chocolates(4)</li>
+                    <li onclick="exibir_categoria('GeleiasPastas')">Geléias & Pastas(3)</li>
                 </ul>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/ebicencebola.jpg" width="120px">
+         </section>
+         
+         <section class="produtos">
+             <div class="box_produto" id="Salgadinhos" style="display: inline-block;">
+                <img src="./Imagens/ebicencebola.jpg" width="120px" onclick="destaque(this)">
                 <br>Salgadinho Ebicen Cebola 30G
                 <hr>
-                <s class="preço_normal">R$3,50</s>
+                <p class="preco_normal">R$3,50</p>
+                <p class="preco_promocao">R$1,00</p>
                 <br>
-                <strong class="preço_promoção">$1,00</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/pimenta.jpg" width="120px">
+             </div>
+             <div class="box_produto" id="Salgadinhos" style="display: inline-block;">
+                <img src="./Imagens/pimenta.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 Salgadinho Ebicen Pimenta 30G
                 <hr>
-                <s class="preço_normal">R$3,50</s>
+                <p class="preco_normal">R$3,50</p>
+                <p class="preco_promocao">R$1,00</p>
                 <br>
-                <strong class="preço_promoção">$1,00</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/Spicy_Sweet_Chili_Flavored_Tortilla_Chips.png" width="120px">
+             </div>
+             <div class="box_produto" id="Salgadinhos" style="display: inline-block;">
+                <img src="./Imagens/Spicy_Sweet_Chili_Flavored_Tortilla_Chips.png" width="120px" onclick="destaque(this)">
                 <br>
                 Salgadinho Doritos Spicy Sweet Chili Flavored Tortilla Chips 276G
                 <hr>
-                <s class="preço_normal">R$20,50</s>
+                <p class="preco_normal">R$20,50</p>
+                <p class="preco_promocao">R$13,00</p>
                 <br>
-                <strong class="preço_promoção">$13,00</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/pringles_paprika.png" width="120px">
+             </div>
+            <div class="box_produto" id="Salgadinhos" style="display: inline-block;">
+                <img src="./Imagens/pringles_paprika.png" width="120px" onclick="destaque(this)">
                 <br>
                 Salgadinho Prings Paprika 165G
                 <hr>
-                <s class="preço_normal">R$23,99</s>
+                <p class="preco_normal">R$23,99</p>
+                <p class="preco_promocao">R$15,00</p>
                 <br>
-                <strong class="preço_promoção">$15,00</strong>
-                <br>
-            </td>
+            </div>
             <tr>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/torrada_tradicional.jpg" width="120px">
+
+            <div class="box_produto" id="Torradas" style="display: inline-block;">
+                <img src="./Imagens/torrada_tradicional.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 Torrada Bauducco Tradicional 142G
                 <hr>
-                <s class="preço_normal">R$3,19</s>
+                <p class="preco_normal">R$3,19</p>
+                <p class="preco_promocao">R$2,50</p>
                 <br>
-                <strong class="preço_promoção">$2,50</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/torrada_integral.jpg" width="120px">
+            </div>
+            <div class="box_produto" id="Torradas" style="display: inline-block;">
+                <img src="./Imagens/torrada_integral.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 Torrada Bauducco Integral 142G
                 <hr>
-                <s class="preço_normal">R$3,50</s>
+                <p class="preco_normal">R$3,50</p>
+                <p class="preco_promocao">R$2,75</p>
                 <br>
-                <strong class="preço_promoção">$2,75</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/torrada_multigraos.jpg" width="120px">
+            </div>
+            <div class="box_produto" id="Torradas" style="display: inline-block;">
+                <img src="./Imagens/torrada_multigraos.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 Torrada Bauducco Multrigrãos 142G
                 <hr>
-                <s class="preço_normal">R$3,25</s>
+                <p class="preco_normal">R$3,25</p>
+                <p class="preco_promocao">R$2,60</p>
                 <br>
-                <strong class="preço_promoção">$2,60</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/oreo.jpg" width="120px">
+            </div>
+            <div class="box_produto" id="Biscoitos" style="display: inline-block;">
+                <img src="./Imagens/oreo.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 Biscoito Recheado Óreo 140G
-                <hr>
-                <s class="preço_normal">R$2,50</s>
+               <hr>
+               <p class="preco_normal">R$2,50</p>
+               <p class="preco_promocao">R$1,70</p>
                 <br>
-                <strong class="preço_promoção">$1,70</strong>
-                <br>
-            </td>
+            </div>
             <tr>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/trakinas.jpg" width="120px">
+            <div class="box_produto" id="Biscoitos" style="display: inline-block;">
+                <img src="./Imagens/trakinas.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 Biscoito Recheado Trakinas Chocolate 126G
                 <hr>
-                <s class="preço_normal">R$2,50</s>
+                <p class="preco_normal">R$2,50</p>
+                <p class="preco_promocao">R$1,85</p>
                 <br>
-                <strong class="preço_promoção">$1,85</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/choco_soy_meio_amaro.png" width="120px">
+            </div>
+            <div class="box_produto" id="Chocolates" style="display: inline-block;">
+                <img src="./Imagens/choco_soy_meio_amaro.png" width="120px" onclick="destaque(this)">
                 <br>
                 Chocolate Choco Soy Meio Amargo 80G
                 <hr>
-                <s class="preço_normal">R$11,35</s>
+                <p class="preco_normal">R$11,35</p>
+                <p class="preco_promocao">R$7,00</p>
                 <br>
-                <strong class="preço_promoção">$7,00</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/choco_soy_tradicional.png" width="120px">
+            </div>
+            <div class="box_produto" id="Chocolates" style="display: inline-block;">
+                <img src="./Imagens/choco_soy_tradicional.png" width="120px" onclick="destaque(this)">
                 <br>
                 Chocolate Choco Soy Tradicional 80G
                 <hr>
-                <s class="preço_normal">R$11,50</s>
+                <p class="preco_normal">R$11,50</p>
+                <p class="preco_promocao">R$8,00</p>
                 <br>
-                <strong class="preço_promoção">$8,00</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/loov.png" width="120px">
+            </div>
+            <div class="box_produto" id="Chocolates" style="display: inline-block;">
+                <img src="./Imagens/loov.png" width="120px" onclick="destaque(this)">
                 <br>
                 Chocolate zero açúcar ao leite de coco em tablete LOOV 25G
                 <hr>
-                <s class="preço_normal">R$8,99</s>
+                <p class="preco_normal">R$8,50</p>
+                <p class="preco_promocao">R$6,50</p>
                 <br>
-                <strong class="preço_promoção">$6,50</strong>
-                <br>
-            </td>
+            </div>
             <tr>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/loove_branco.png" width="120px">
+            <div class="box_produto" id="Chocolates" style="display: inline-block;">
+                <img src="./Imagens/loove_branco.png" width="120px" onclick="destaque(this)">
                 <br>
                 Chocolate zero açúcar branco em tablete LOOV 25G
                 <hr>
-                <s class="preço_normal">R$8,99</s>
+                <p class="preco_normal">R$8,99</p>
+                <p class="preco_promocao">R$6,50</p>
                 <br>
-                <strong class="preço_promoção">$6,50</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/queensberry_amora.jpg" width="120px">
+            </div>
+            <div class="box_produto" id="GeleiasPastas" style="display: inline-block;">
+                <img src="./Imagens/queensberry_amora.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 Geleia de Amora Diet Queensberry 280G 
                 <hr>
-                <s class="preço_normal">R$22,99</s>
+                <p class="preco_normal">R$22,99</p>
+                <p class="preco_promocao">R$17,00</p>
                 <br>
-                <strong class="preço_promoção">$17,00</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/CAJUTELLA.jpg" width="120px">
+            </div>
+            <div class="box_produto" id="GeleiasPastas" style="display: inline-block;">
+                <img src="./Imagens/CAJUTELLA.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 Cajutella Bioporã 210G
                 <hr>
-                <s class="preço_normal">R$34,90</s>
+                <p class="preco_normal">R$34,90</p>
+                <p class="preco_promocao">R$20,00</p>
+            <br>
+            </div>
+            <div class="box_produto" id="GeleiasPastas" style="display: inline-block;">
+                <img src="./Imagens/recheio_brown_loov.png" width="120px" onclick="destaque(this)">
                 <br>
-                <strong class="preço_promoção">$20,00</strong>
-                <br>
-            </td>
-            <td width="20%" align="center" valign="bottom">
-                <img src="./Imagens/recheio_brown_loov.png" width="120px">
-                <br>
-                Creme De Chocolate Zero Açúcar Loov Recheio Brown 160g
+                Creme de Chocolate Zero Açúcar Loov Recheio Brown 160g
                 <hr>
-                <s class="preço_normal">R$34,90</s>
+                <p class="preco_normal">R$34,90</p>
+                <p class="preco_promocao">R$22,00</p>
                 <br>
-                <strong class="preço_promoção">$22,00</strong>
-                <br>
-            </td>
-
+            </div>
+        </section>
+    <!-- Fim dos Produtos -->
 
         </tr>
-    </table>
 
     <br> <br> <br> <br>
-    <center>
-        <span>
-            <h4>Formas de Pagamento</h4>
+    <footer id="rodape">
+        <h4>Formas de Pagamento</h4>
             <img src="./Imagens/formas_de_pagamento.png" alt="Formas de pagamento">
-            
-        </span>
-    </center>
-    <center>&copy; Recode Pro</center>
+        <p>&copy;Recode Pro</p>
+    </footer>
 </body>
 </html>
