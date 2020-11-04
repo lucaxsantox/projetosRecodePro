@@ -9,9 +9,19 @@
 
 <body>
     <!-- Início do Menu-->
+<<<<<<< HEAD:loja.php
     <?php
     include('menu.html');
     ?>
+=======
+    <nav class="menu">
+        <a href="index.html"><img width= "100px" src="./Imagens/logo.png" alt="Snack Table"></a>
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas Lojas</a>
+        <a href="contato.html">Contato</a>
+
+    </nav>
+>>>>>>> 073e01b07c5f5aae20c0800acaa389fdb078abd3:loja.html
     <!-- Fim do menu--> 
     
     <h1>Nossas lojas</h1>
