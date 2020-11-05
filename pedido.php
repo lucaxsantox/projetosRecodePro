@@ -68,7 +68,7 @@ if (!$conn) {
                         <option>Salgadinho Ebicen Cebola 30G</option>
                         <option>Salgadinho Ebicen Pimenta 30G</option>
                         <option>Salgadinho Doritos Spicy Sweet Chili Flavored Tortilla Chips 276G</option>
-                        <option>Salgadinho Prings Paprika 165G</option>
+                        <option>Salgadinho Pringles Paprika 165G</option>
                         <option>Torrada Bauducco Tradicional 142G</option>
                         <option>Torrada Bauducco Integral 142G</option>
                         <option>Torrada Bauducco Multrigrãos 142G</option>
