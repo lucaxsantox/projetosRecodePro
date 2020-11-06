@@ -46,23 +46,34 @@ if (!$conn) {
     </nav>
 
     <header>
-        <h1>Produtos</h1>
+
+    
+                <div class="card-body">
+                <div class="container">
+                <h1 class="display-4">Produtos</h1>
+                </div>
+                </div>
+    
+     
     </header>
     
     
     <hr>
     <!-- Produtos -->
         <section class="categoria">
-                <h1>Categorias</h1>
-                <ul>
-                    <li onclick="exibir_todos()">Todos(16)</li>
-                    <li onclick="exibir_categoria('Salgadinhos')">Salgadinhos(4)</li>
-                    <li onclick="exibir_categoria('Torradas')">Torradas(3)</li>
-                    <li onclick="exibir_categoria('Biscoitos')">Biscoitos(2)</li>
-                    <li onclick="exibir_categoria('Chocolates')">Chocolates(4)</li>
-                    <li onclick="exibir_categoria('GeleiasPastas')">Geleias & Pastas(3)</li>
+        <div class="container">       
+        <h1>Categorias</h1>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active list-group-item-dark" onclick="exibir_todos()">Todos(16)</li>
+                    <a href="#" class="list-group-item list-group-item-action active list-group-item-dark" onclick="exibir_categoria('Salgadinhos')">Salgadinhos(4)</li>
+                    <a href="#" class="list-group-item list-group-item-action active list-group-item-dark" onclick="exibir_categoria('Torradas')">Torradas(3)</li>
+                    <a href="#" class="list-group-item list-group-item-action active list-group-item-dark" onclick="exibir_categoria('Biscoitos')">Biscoitos(2)</li>
+                    <a href="#" class="list-group-item list-group-item-action active list-group-item-dark" onclick="exibir_categoria('Chocolates')">Chocolates(4)</li>
+                    <a href="#" class="list-group-item list-group-item-action active list-group-item-dark" onclick="exibir_categoria('GeleiasPastas')">Geleias & Pastas(3)</li>
                     <a class="btn btn-danger" href="pedido.php" role="button">Faça seu pedido!</a>
-                </ul>
+                <div>
+        </div>           
          </section>
          
          <section class="produtos">

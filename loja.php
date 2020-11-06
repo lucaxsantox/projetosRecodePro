@@ -4,56 +4,63 @@
 <head>
         <meta charset= "UTF-8">
         <title>Nossas Lojas - Snack Table</title> 
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- Início do Menu-->
-<<<<<<< HEAD:loja.php
     <?php
     include('menu.html');
     ?>
-=======
-    <nav class="menu">
-        <a href="index.html"><img width= "100px" src="./Imagens/logo.png" alt="Snack Table"></a>
-        <a href="produtos.html">Produtos</a>
-        <a href="loja.html">Nossas Lojas</a>
-        <a href="contato.html">Contato</a>
-
-    </nav>
->>>>>>> 073e01b07c5f5aae20c0800acaa389fdb078abd3:loja.html
     <!-- Fim do menu--> 
     
-    <h1>Nossas lojas</h1>
+    <div class="jumbotron jumbotron-fluid" style="background-color: white;">
+            <div class="container">
+                <h1 class="display-4">Nossas lojas</h1>
+                    <p class="lead">Encontre a loja mais perto da sua casa.</p>
+            </div>
+    </div>
+        
     
     <hr>
 
-    <table border=0 width="100%" cellpadding="20">
-        <tr style="vertical-align: top;">
-            <td>
-                <h3>Rio de Janeiro</h3>
-                <p>Rua do Arquiteto, 150</p>
-                <p>2 &ordm; andar</p>
-                <p>Recreio dos Bandeirantes</p>
-                <p>(21) 2121-2121</p>
-            </td>
+    <table class="table-bordered table-dark" width="100%" cellpadding="20">
+        <thead>
+            <tr style="vertical-align: top;">
 
-            <td>
-                <h3>Minas Gerais</h3>
-                <p>Rua São Marcelino, 208</p>
-                <p>5 &ordm; andar</p>
-                <p>Novo Cruzeiro</p>
-                <p>(31) 3131-3131</p>
-            </td>
-            
-            <td>
-                <h3>São Paulo</h3>
-                <p>Rua da Estação, 35</p>
-                <p>Osasco</p>
-                <p>(11) 1111-1111</p>
-            </td>
-        </tr>
-    </table>
+                    <th>Rio de Janeiro</th>
+                    <th >Minas Gerais</th>
+                    <th rowspan="1">São Paulo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                    
+                    <td>Rua do Arquiteto, 150</td>
+                    <td>Rua São Marcelino, 208</td>
+                    <td>Rua da estação, 35</td>
+            </tr>
+            <tr>
+                    <td>2 &ordm; andar</td>
+                    <td>5 &ordm; andar</td>
+                    <td>1 &ordm; andar</td>
+            </tr>   
+            <tr>
+                    <td>Recreio dos Bandeirantes</td>
+                    <td>Novo Cruzeiro</td>
+                    <td>Osasco<td>
+            </tr> 
+            <tr>
+                    <td>(21) 2121-2121</td>
+                    <td>(31) 3131-3131</td>
+                    <td>(11) 1111-1111</td>
+            </tr>
+        </tbody>
+    </table>            
 
     <br> <br> <br> <br>
 
