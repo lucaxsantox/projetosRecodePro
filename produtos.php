@@ -1,5 +1,7 @@
 <?php
 
+header("Access-Control-Allow-Origin:*");
+
 
 $servername = "localhost";
 $username = "root"; 
@@ -29,12 +31,13 @@ if (!$conn) {
 <head>
         <meta charset="UTF-8">
         <title>Produtos - Snack Table</title>
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
         <script src="./js/funcoes.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body> 
@@ -60,8 +63,10 @@ if (!$conn) {
     
     <hr>
     <!-- Produtos -->
-        <section class="categoria">
-        <div class="container">       
+        
+    <div class=" d-flex justify-content-around ">
+    <section class="categoria">
+            
         <h1>Categorias</h1>
 
                 <div class="list-group">
@@ -73,7 +78,7 @@ if (!$conn) {
                     <a href="#" class="list-group-item list-group-item-action active list-group-item-dark" onclick="exibir_categoria('GeleiasPastas')">Geleias & Pastas(3)</li>
                     <a class="btn btn-danger" href="pedido.php" role="button">Faça seu pedido!</a>
                 <div>
-        </div>           
+                
          </section>
          
          <section class="produtos">
@@ -86,7 +91,7 @@ if (!$conn) {
                 while($rows = $result->fetch_assoc()){
                     
         ?>
-            <div class="box_produto" id="<?php echo $rows["categoria"]; ?>" style="display: inline-block;">
+            <div class="box_produto " id="<?php echo $rows["categoria"]; ?>" style="display: inline-block;">
                 <img src="<?php echo $rows["imagem"]; ?>" width="120px" onclick="destaque(this)">
                 <br><?php echo $rows["descricao"]; ?>
                 <hr>
@@ -104,6 +109,8 @@ if (!$conn) {
         ?>
              
         </section>
+
+            </div>
     <!-- Fim dos Produtos -->
 
         </tr>

@@ -30,9 +30,14 @@ if(isset($_POST['nome']) && isset($_POST['endereco']) && isset($_POST['telefone'
     values ('$nome', '$endereco', $telefone, '$nome_do_produto', $quantidade);";
     $result = $conn->query($sql);
 
+    
+
     if ($result){
         echo "<script>alert('Pedido enviado com sucesso!');</script>";
         header("Location: produtos.php");
+    } 
+
+
     }
     else {
          echo "<script>alert('Houve um erro ao salvar...');</script>";

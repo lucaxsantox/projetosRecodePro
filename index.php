@@ -38,7 +38,7 @@
 
     
     <footer id="rodape">
-    </div>
+        
         <h4>Formas de Pagamento</h4>
             <img src="./Imagens/formas_de_pagamento.png" alt="Formas de pagamento">
         <p>&copy;Recode Pro</p>
